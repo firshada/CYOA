@@ -1,0 +1,201 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+:root {
+  --gradient-start: #f0f9ff;
+  --gradient-end: #fdf4ff;
+}
+
+.dark {
+  --gradient-start: #0f172a;
+  --gradient-end: #1e1b4b;
+}
+
+body {
+  @apply font-sans antialiased;
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 dark:bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 dark:bg-gray-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400 dark:bg-gray-500;
+}
+
+/* Glass effect for cards */
+.glass {
+  @apply bg-white/70 dark:bg-gray-900/70 backdrop-blur-lg;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .glass {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Gradient text */
+.gradient-text {
+  @apply bg-gradient-to-r from-primary-500 via-accent-500 to-primary-500 bg-clip-text text-transparent;
+  background-size: 200% auto;
+}
+
+/* Button gradient */
+.btn-gradient {
+  @apply bg-gradient-to-r from-primary-500 to-accent-500 hover:from-primary-600 hover:to-accent-600;
+  @apply text-white font-semibold rounded-xl px-6 py-3;
+  @apply transform transition-all duration-200 ease-out;
+  @apply hover:scale-105 hover:shadow-lg active:scale-95;
+}
+
+.btn-secondary {
+  @apply bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200;
+  @apply border-2 border-gray-200 dark:border-gray-700;
+  @apply font-semibold rounded-xl px-6 py-3;
+  @apply transform transition-all duration-200 ease-out;
+  @apply hover:border-primary-400 hover:text-primary-600 dark:hover:border-primary-500 dark:hover:text-primary-400;
+  @apply hover:scale-105 active:scale-95;
+}
+
+/* Card styles */
+.card {
+  @apply glass rounded-2xl shadow-xl p-6;
+  @apply transform transition-all duration-300;
+}
+
+.card-hover:hover {
+  @apply shadow-2xl scale-[1.02];
+}
+
+/* Confetti pieces */
+.confetti-piece {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  animation: confetti 1.5s ease-out forwards;
+  pointer-events: none;
+}
+
+@keyframes confetti {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(100vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+/* Locked ending overlay */
+.locked-overlay {
+  @apply absolute inset-0 bg-gray-200/80 dark:bg-gray-800/80 backdrop-blur-sm;
+  @apply flex items-center justify-center;
+  @apply rounded-2xl;
+}
+
+/* Shimmer effect for locked items */
+.shimmer {
+  background: linear-gradient(90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.3) 50%,
+      rgba(255, 255, 255, 0) 100%);
+  background-size: 200% 100%;
+  animation: shimmer 2s linear infinite;
+}
+
+.dark .shimmer {
+  background: linear-gradient(90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.1) 50%,
+      rgba(255, 255, 255, 0) 100%);
+  background-size: 200% 100%;
+}
+
+/* Page transitions */
+.page-enter {
+  @apply animate-fade-in;
+}
+
+/* Choice button special effects */
+.choice-btn {
+  @apply relative overflow-hidden;
+}
+
+.choice-btn::before {
+  content: '';
+  @apply absolute inset-0 bg-gradient-to-r from-primary-400/0 via-primary-400/20 to-primary-400/0;
+  @apply transform -translate-x-full transition-transform duration-500;
+}
+
+.choice-btn:hover::before {
+  @apply translate-x-full;
+}
+
+/* Floating decorations animation */
+@keyframes float-slow {
+
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg) scale(1);
+  }
+
+  25% {
+    transform: translateY(-20px) rotate(5deg) scale(1.05);
+  }
+
+  50% {
+    transform: translateY(-10px) rotate(-3deg) scale(0.98);
+  }
+
+  75% {
+    transform: translateY(-25px) rotate(2deg) scale(1.02);
+  }
+}
+
+@keyframes pulse-soft {
+
+  0%,
+  100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 12s ease-in-out infinite;
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 6s ease-in-out infinite;
+}
+
+/* Shimmer animation */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}

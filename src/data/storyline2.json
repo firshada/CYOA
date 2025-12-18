@@ -1,0 +1,496 @@
+{
+  "meta": {
+    "id": "pdkt-lanjutan",
+    "title": "Antara QA dan BA",
+    "subtitle": "Pilihan Hati",
+    "description": "Ahmat dihadapkan dengan dua pilihan: Sasya (BA) atau Vinda (QA). Siapa yang akan ia pilih?",
+    "emoji": "💕"
+  },
+  "nodes": [
+    {
+      "id": "n1",
+      "text": "Pagi di kantor. Ahmat menatap layar laptop, tapi pikirannya melayang ke dua nama: Sasya (BA) dan Vinda (QA).",
+      "choices": [
+        {
+          "label": "A: Mulai kerja seperti biasa",
+          "next": "n2"
+        },
+        {
+          "label": "B: Tarik napas, refleksi sebentar",
+          "next": "n3"
+        }
+      ]
+    },
+    {
+      "id": "n2",
+      "text": "Notifikasi Slack muncul hampir bersamaan dari dua arah berbeda.",
+      "choices": [
+        {
+          "label": "A: Buka pesan Sasya",
+          "next": "n4"
+        },
+        {
+          "label": "B: Buka pesan Vinda",
+          "next": "n5"
+        }
+      ]
+    },
+    {
+      "id": "n3",
+      "text": "Ahmat bertanya ke dirinya sendiri: apakah ini cuma rasa nyaman, atau sesuatu yang lebih?",
+      "choices": [
+        {
+          "label": "A: Cari jawabannya pelan-pelan",
+          "next": "n2"
+        },
+        {
+          "label": "B: Abaikan dulu, fokus kerja",
+          "next": "n6"
+        }
+      ]
+    },
+    {
+      "id": "n4",
+      "text": "Sasya mengirim requirement baru. Bahasanya rapi, tapi ditutup dengan senyum kecil.",
+      "choices": [
+        {
+          "label": "A: Jawab detail dan terstruktur",
+          "next": "n7"
+        },
+        {
+          "label": "B: Jawab santai tapi jelas",
+          "next": "n8"
+        }
+      ]
+    },
+    {
+      "id": "n5",
+      "text": "Vinda mengirim laporan bug singkat. Efisien, seperti biasanya.",
+      "choices": [
+        {
+          "label": "A: Bahas bug langsung",
+          "next": "n9"
+        },
+        {
+          "label": "B: Tanya kabarnya dulu",
+          "next": "n8"
+        }
+      ]
+    },
+    {
+      "id": "n6",
+      "text": "Ahmat tenggelam dalam pekerjaan, tapi tetap merasa ada yang tertinggal.",
+      "choices": [
+        {
+          "label": "A: Ajak makan siang Sasya",
+          "next": "n10"
+        },
+        {
+          "label": "B: Ajak makan siang Vinda",
+          "next": "n11"
+        }
+      ]
+    },
+    {
+      "id": "n7",
+      "text": "Sasya membalas cepat. Diskusi berkembang jadi obrolan ringan.",
+      "choices": [
+        {
+          "label": "A: Ajak meeting kecil",
+          "next": "n12"
+        },
+        {
+          "label": "B: Simpan dulu, lanjut kerja",
+          "next": "n6"
+        }
+      ]
+    },
+    {
+      "id": "n8",
+      "text": "Percakapan terasa lebih personal dari biasanya.",
+      "choices": [
+        {
+          "label": "A: Jaga batas profesional",
+          "next": "n6"
+        },
+        {
+          "label": "B: Biarkan mengalir",
+          "next": "n13"
+        }
+      ]
+    },
+    {
+      "id": "n9",
+      "text": "Vinda menjelaskan bug dengan sabar. Ada jeda hening yang nyaman.",
+      "choices": [
+        {
+          "label": "A: Tawarkan bantu testing",
+          "next": "n14"
+        },
+        {
+          "label": "B: Janji follow up",
+          "next": "n6"
+        }
+      ]
+    },
+    {
+      "id": "n10",
+      "text": "Makan siang dengan Sasya terasa hidup. Banyak cerita di luar kerja.",
+      "choices": [
+        {
+          "label": "A: Dengarkan lebih banyak",
+          "next": "n15"
+        },
+        {
+          "label": "B: Cerita tentang diri sendiri",
+          "next": "n16"
+        }
+      ]
+    },
+    {
+      "id": "n11",
+      "text": "Makan siang dengan Vinda sederhana dan tenang.",
+      "choices": [
+        {
+          "label": "A: Nikmati diamnya",
+          "next": "n17"
+        },
+        {
+          "label": "B: Buka topik personal",
+          "next": "n16"
+        }
+      ]
+    },
+    {
+      "id": "n12",
+      "text": "Meeting kecil berubah jadi diskusi panjang yang menyenangkan.",
+      "choices": [
+        {
+          "label": "A: Lanjutkan sampai sore",
+          "next": "n18"
+        },
+        {
+          "label": "B: Akhiri tepat waktu",
+          "next": "n6"
+        }
+      ]
+    },
+    {
+      "id": "n13",
+      "text": "Ada tawa kecil. Ahmat sadar, ini mulai berarti.",
+      "choices": [
+        {
+          "label": "A: Ajak ngopi setelah kerja",
+          "next": "n19"
+        },
+        {
+          "label": "B: Tahan dulu perasaan",
+          "next": "n6"
+        }
+      ]
+    },
+    {
+      "id": "n14",
+      "text": "Testing bareng Vinda terasa fokus, tapi hangat.",
+      "choices": [
+        {
+          "label": "A: Jujur soal ketertarikan",
+          "next": "n20"
+        },
+        {
+          "label": "B: Tetap profesional",
+          "next": "n21"
+        }
+      ]
+    },
+    {
+      "id": "n15",
+      "text": "Sasya merasa didengar. Ia terlihat lebih terbuka.",
+      "choices": [
+        {
+          "label": "A: Tunjukkan perhatian",
+          "next": "n22"
+        },
+        {
+          "label": "B: Tetap netral",
+          "next": "n23"
+        }
+      ]
+    },
+    {
+      "id": "n16",
+      "text": "Percakapan menjadi seimbang. Ada rasa saling mengenal.",
+      "choices": [
+        {
+          "label": "A: Lanjutkan hubungan ini",
+          "next": "n22"
+        },
+        {
+          "label": "B: Tarik napas, perlahan",
+          "next": "n23"
+        }
+      ]
+    },
+    {
+      "id": "n17",
+      "text": "Vinda tersenyum kecil. Tidak banyak kata, tapi jelas.",
+      "choices": [
+        {
+          "label": "A: Hargai momen",
+          "next": "n24"
+        },
+        {
+          "label": "B: Akhiri dengan sopan",
+          "next": "n21"
+        }
+      ]
+    },
+    {
+      "id": "n18",
+      "text": "Diskusi panjang terasa melelahkan tapi memuaskan.",
+      "choices": [
+        {
+          "label": "A: Akui perasaan",
+          "next": "n25"
+        },
+        {
+          "label": "B: Simpan dulu",
+          "next": "n23"
+        }
+      ]
+    },
+    {
+      "id": "n19",
+      "text": "Ngopi setelah kerja membuka sisi yang lebih jujur.",
+      "choices": [
+        {
+          "label": "A: Dengan Sasya",
+          "next": "n26"
+        },
+        {
+          "label": "B: Dengan Vinda",
+          "next": "n27"
+        }
+      ]
+    },
+    {
+      "id": "n20",
+      "text": "Kejujuranmu membuat suasana sunyi sejenak.",
+      "choices": [
+        {
+          "label": "A: Biarkan hening bekerja",
+          "next": "n28"
+        },
+        {
+          "label": "B: Tarik kembali kata-kata",
+          "next": "n21"
+        }
+      ]
+    },
+    {
+      "id": "n21",
+      "text": "Profesionalisme tetap terjaga, tapi ada rasa yang tak selesai.",
+      "choices": [
+        {
+          "label": "A: Terima keadaan",
+          "ending": "e6"
+        },
+        {
+          "label": "B: Janjikan diri untuk jujur nanti",
+          "next": "n29"
+        }
+      ]
+    },
+    {
+      "id": "n22",
+      "text": "Sasya membalas perhatianmu dengan kejujuran yang tenang.",
+      "choices": [
+        {
+          "label": "A: Bangun komitmen",
+          "ending": "e1"
+        },
+        {
+          "label": "B: Jalan perlahan",
+          "ending": "e4"
+        }
+      ]
+    },
+    {
+      "id": "n23",
+      "text": "Ahmat memilih aman, meski hatinya belum sepenuhnya yakin.",
+      "choices": [
+        {
+          "label": "A: Tetap seperti ini",
+          "ending": "e7"
+        },
+        {
+          "label": "B: Refleksi ulang malam ini",
+          "next": "n29"
+        }
+      ]
+    },
+    {
+      "id": "n24",
+      "text": "Kesunyian terasa jujur dan saling memahami.",
+      "choices": [
+        {
+          "label": "A: Pegang rasa ini",
+          "ending": "e2"
+        },
+        {
+          "label": "B: Lepaskan pelan-pelan",
+          "ending": "e6"
+        }
+      ]
+    },
+    {
+      "id": "n25",
+      "text": "Perasaan diungkapkan tanpa tuntutan.",
+      "choices": [
+        {
+          "label": "A: Ke Sasya",
+          "ending": "e8"
+        },
+        {
+          "label": "B: Ke Vinda",
+          "ending": "e9"
+        }
+      ]
+    },
+    {
+      "id": "n26",
+      "text": "Ngopi dengan Sasya terasa dewasa dan saling memahami.",
+      "choices": [
+        {
+          "label": "A: Teruskan",
+          "ending": "e1"
+        },
+        {
+          "label": "B: Jujur tentang kebimbangan",
+          "ending": "e10"
+        }
+      ]
+    },
+    {
+      "id": "n27",
+      "text": "Ngopi dengan Vinda berjalan tenang, tanpa tekanan.",
+      "choices": [
+        {
+          "label": "A: Hargai ketenangan ini",
+          "ending": "e2"
+        },
+        {
+          "label": "B: Ungkap isi hati",
+          "ending": "e11"
+        }
+      ]
+    },
+    {
+      "id": "n28",
+      "text": "Hening itu tidak menakutkan. Justru terasa aman.",
+      "choices": [
+        {
+          "label": "A: Tetap di sini",
+          "ending": "e9"
+        },
+        {
+          "label": "B: Mundur perlahan",
+          "ending": "e6"
+        }
+      ]
+    },
+    {
+      "id": "n29",
+      "text": "Malam hari, Ahmat merenung tentang apa yang benar-benar ia butuhkan.",
+      "choices": [
+        {
+          "label": "A: Pilih kejujuran penuh",
+          "ending": "e12"
+        },
+        {
+          "label": "B: Terima ketidakpastian",
+          "ending": "e7"
+        }
+      ]
+    }
+  ],
+  "endings": [
+    {
+      "id": "e1",
+      "title": "Sejalan dengan Sasya",
+      "badge": "BA Path",
+      "text": "Ahmat dan Sasya membangun hubungan yang seimbang antara visi dan perasaan.",
+      "hint": "Kedekatan tumbuh dari diskusi yang jujur."
+    },
+    {
+      "id": "e2",
+      "title": "Tenang bersama Vinda",
+      "badge": "QA Path",
+      "text": "Ahmat memilih Vinda, menemukan kenyamanan dalam ketenangan.",
+      "hint": "Keheningan bisa berarti aman."
+    },
+    {
+      "id": "e3",
+      "title": "Jawaban yang Dicari",
+      "badge": "Clear Heart",
+      "text": "Kejujuran Ahmat mendapat balasan yang tulus.",
+      "hint": "Keberanian bertemu waktu yang tepat."
+    },
+    {
+      "id": "e4",
+      "title": "Berjalan Perlahan",
+      "badge": "Soft Pace",
+      "text": "Tidak ada janji besar, hanya langkah kecil yang konsisten.",
+      "hint": "Pelan bukan berarti ragu."
+    },
+    {
+      "id": "e6",
+      "title": "Tetap Profesional",
+      "badge": "Safe Zone",
+      "text": "Ahmat memilih menjaga jarak demi stabilitas.",
+      "hint": "Pilihan aman selalu ada."
+    },
+    {
+      "id": "e7",
+      "title": "Menggantung",
+      "badge": "Pending",
+      "text": "Tidak ada yang berakhir, tapi juga tidak benar-benar dimulai.",
+      "hint": "Menunda adalah keputusan."
+    },
+    {
+      "id": "e8",
+      "title": "Secret: Dewasa Bersama",
+      "badge": "Mutual Growth",
+      "text": "Ahmat dan Sasya sepakat tumbuh bersama, tanpa tergesa.",
+      "hint": "Kejujuran tanpa tuntutan membuka jalan ini."
+    },
+    {
+      "id": "e9",
+      "title": "Secret: Hening yang Dipilih",
+      "badge": "Quiet Bond",
+      "text": "Ahmat dan Vinda memahami satu sama lain tanpa perlu banyak kata.",
+      "hint": "Keheningan yang tidak ditinggalkan."
+    },
+    {
+      "id": "e10",
+      "title": "Secret: Jujur pada Semua",
+      "badge": "Clean Truth",
+      "text": "Ahmat jujur pada Sasya dan dirinya sendiri, tanpa menyakiti.",
+      "hint": "Kejujuran penuh sering datang terlambat."
+    },
+    {
+      "id": "e11",
+      "title": "Secret: Langkah Berani",
+      "badge": "Soft Courage",
+      "text": "Ahmat dan Vinda memilih mencoba, dengan hati-hati.",
+      "hint": "Keberanian tidak selalu keras."
+    },
+    {
+      "id": "e12",
+      "title": "Secret: Berdamai dengan Diri",
+      "badge": "Self Peace",
+      "text": "Ahmat memilih jujur pada dirinya, dan itu cukup.",
+      "hint": "Tidak semua cerita butuh pasangan."
+    }
+  ]
+}

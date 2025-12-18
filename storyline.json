@@ -1,0 +1,344 @@
+{
+  "nodes": [
+    {
+      "id": "n1",
+      "text": "Pagi di kantor Jakarta: AC dingin, kopi pahit, dan kamu berniat PDKT ke partner kerja, Andini.",
+      "choices": [
+        { "label": "A: Sapa normal, seperti manusia berfungsi", "next": "n2" },
+        { "label": "B: Beli kopi dulu, biar ada pegangan hidup", "next": "n3" }
+      ]
+    },
+    {
+      "id": "n2",
+      "text": "Kamu bilang, “Pagi.” Andini jawab, “Pagi,” dengan senyum versi hemat kuota.",
+      "choices": [
+        { "label": "A: Lanjut basa-basi cuaca Jakarta", "next": "n4" },
+        { "label": "B: Tiba-tiba bahas deadline", "next": "n5" }
+      ]
+    },
+    {
+      "id": "n3",
+      "text": "Di minimarket, satpam filosofis Pak Bambang menatap kopi kaleng seolah hidup punya pilihan.",
+      "choices": [
+        { "label": "A: Minta nasihat cinta ke Pak Bambang", "next": "n6" },
+        { "label": "B: Ambil kopi paling mahal biar pede", "next": "n4" }
+      ]
+    },
+    {
+      "id": "n4",
+      "text": "Kalian ngobrol ringan. Tiba-tiba TransJakarta lewat di luar jendela, padahal lantai 12.",
+      "choices": [
+        { "label": "A: Pura-pura itu normal", "next": "n7" },
+        { "label": "B: Tanya Andini lihat juga nggak", "next": "n8" }
+      ]
+    },
+    {
+      "id": "n5",
+      "text": "Bahas deadline bikin suasana romantis seperti spreadsheet kosong.",
+      "choices": [
+        { "label": "A: Ajukan makan siang biar cair", "next": "n9" },
+        { "label": "B: Ganti topik ke hobi absurd", "next": "n8" }
+      ]
+    },
+    {
+      "id": "n6",
+      "text": "Pak Bambang berkata, “Cinta itu kayak tap-in KRL, jangan ragu, tapi jangan salah gerbang.”",
+      "choices": [
+        { "label": "A: Terapkan sekarang juga", "next": "n7" },
+        { "label": "B: Catat quotes-nya dulu", "next": "n10" }
+      ]
+    },
+    {
+      "id": "n7",
+      "text": "Kamu dan Andini tertawa kecil. Tertawanya sinkron, agak mencurigakan.",
+      "choices": [
+        { "label": "A: Ajak ngopi sore", "next": "n9" },
+        { "label": "B: Senyum terlalu lama", "next": "n11" }
+      ]
+    },
+    {
+      "id": "n8",
+      "text": "Andini bilang TransJakarta terbang itu biasa, asal niatnya baik.",
+      "choices": [
+        { "label": "A: Mengangguk penuh iman", "next": "n11" },
+        { "label": "B: Catat untuk bahan obrolan HR", "next": "n12" }
+      ]
+    },
+    {
+      "id": "n9",
+      "text": "Di warteg, Bang Ujang menyajikan nasi dengan keseriusan sidang paripurna.",
+      "choices": [
+        { "label": "A: Pesan menu yang sama dengan Andini", "next": "n13" },
+        { "label": "B: Tanya Bang Ujang soal cinta", "next": "n14" }
+      ]
+    },
+    {
+      "id": "n10",
+      "text": "Kamu nulis quotes Pak Bambang. Pulpenmu tiba-tiba berubah jadi e-money.",
+      "choices": [
+        { "label": "A: Tap ke pintu mana pun", "next": "n15" },
+        { "label": "B: Simpan, lanjut kerja", "next": "n12" }
+      ]
+    },
+    {
+      "id": "n11",
+      "text": "Senyummu bikin waktu melambat. Slack berbunyi seperti gong candi.",
+      "choices": [
+        { "label": "A: Balas Slack dengan pantun", "next": "n16" },
+        { "label": "B: Abaikan demi momen", "next": "n17" }
+      ]
+    },
+    {
+      "id": "n12",
+      "text": "Bu Rina HR muncul, berbisik seperti mafia, “Ini meeting… atau takdir?”",
+      "choices": [
+        { "label": "A: Ikut roleplay Bu Rina", "next": "n18" },
+        { "label": "B: Kabur ke pantry", "next": "n15" }
+      ]
+    },
+    {
+      "id": "n13",
+      "text": "Menu sama membuat kalian merasa seperti tim esports.",
+      "choices": [
+        { "label": "A: High-five nasi", "next": "n19" },
+        { "label": "B: Diam khidmat", "next": "n17" }
+      ]
+    },
+    {
+      "id": "n14",
+      "text": "Bang Ujang bilang, “Cinta itu lauk tambahan, bayar belakangan.”",
+      "choices": [
+        { "label": "A: Ambil lauk tambahan", "next": "n19" },
+        { "label": "B: Bayar duluan biar aman", "next": "n20" }
+      ]
+    },
+    {
+      "id": "n15",
+      "text": "Pantry berubah jadi stasiun KRL mini. Papan jadwal menuliskan ‘Perasaan’.",
+      "choices": [
+        { "label": "A: Naik kereta perasaan", "next": "n21" },
+        { "label": "B: Tunggu kereta logika", "next": "n22" }
+      ]
+    },
+    {
+      "id": "n16",
+      "text": "Pantunmu viral internal. Andini kirim emoji yang ambigu.",
+      "choices": [
+        { "label": "A: Tanyakan artinya", "next": "n23" },
+        { "label": "B: Balas emoji lebih ambigu", "next": "n24" }
+      ]
+    },
+    {
+      "id": "n17",
+      "text": "Momen berlanjut. AC mati, cinta menghangat.",
+      "choices": [
+        { "label": "A: Jujur soal perasaan", "next": "n23" },
+        { "label": "B: Bercanda ekstrem", "next": "n25" }
+      ]
+    },
+    {
+      "id": "n18",
+      "text": "Bu Rina memberi kode rahasia: jabat tangan tiga kali, tatap printer.",
+      "choices": [
+        { "label": "A: Ikuti ritual", "next": "n26" },
+        { "label": "B: Salah gerakan sedikit", "next": "n27" }
+      ]
+    },
+    {
+      "id": "n19",
+      "text": "High-five nasi memicu tepuk tangan warteg satu ruangan.",
+      "choices": [
+        { "label": "A: Terima applause", "next": "n28" },
+        { "label": "B: Sembunyi di balik teh manis", "next": "n22" }
+      ]
+    },
+    {
+      "id": "n20",
+      "text": "Kamu bayar duluan. Bang Ujang mengangguk, dunia merestui.",
+      "choices": [
+        { "label": "A: Ajak Andini jalan pulang", "next": "n29" },
+        { "label": "B: Pamitan profesional", "next": "n30" }
+      ]
+    },
+    {
+      "id": "n21",
+      "text": "Kereta perasaan ngebut tanpa rem.",
+      "choices": [
+        { "label": "A: Pegangan", "ending": "e4" },
+        { "label": "B: Lompat sebelum terlambat", "ending": "e7" }
+      ]
+    },
+    {
+      "id": "n22",
+      "text": "Kereta logika tak pernah datang. Kamu duduk dengan harapan.",
+      "choices": [
+        { "label": "A: Menunggu bersama Andini", "ending": "e1" },
+        { "label": "B: Pulang sendiri", "ending": "e6" }
+      ]
+    },
+    {
+      "id": "n23",
+      "text": "Kejujuran melayang di udara seperti balon promosi.",
+      "choices": [
+        { "label": "A: Biarkan terbang", "ending": "e2" },
+        { "label": "B: Tarik talinya", "ending": "e3" }
+      ]
+    },
+    {
+      "id": "n24",
+      "text": "Emoji berbalas jadi bahasa baru. Kantor bingung.",
+      "choices": [
+        { "label": "A: Publikasikan kamus", "ending": "e9" },
+        { "label": "B: Rahasiakan", "next": "n29" }
+      ]
+    },
+    {
+      "id": "n25",
+      "text": "Candaan ekstremmu memanggil burung merpati ke meja.",
+      "choices": [
+        { "label": "A: Jadikan maskot", "ending": "e8" },
+        { "label": "B: Usir sopan", "ending": "e10" }
+      ]
+    },
+    {
+      "id": "n26",
+      "text": "Printer mencetak surat: ‘Silakan bahagia.’",
+      "choices": [
+        { "label": "A: Tanda tangan", "ending": "e5" },
+        { "label": "B: Sobek perlahan", "ending": "e11" }
+      ]
+    },
+    {
+      "id": "n27",
+      "text": "Ritual gagal. Bu Rina tertawa puas.",
+      "choices": [
+        { "label": "A: Minta maaf dramatis", "ending": "e12" },
+        { "label": "B: Kabur ke lift", "ending": "e6" }
+      ]
+    },
+    {
+      "id": "n28",
+      "text": "Applause berlanjut sampai dessert imajiner.",
+      "choices": [
+        { "label": "A: Pidato singkat", "ending": "e13" },
+        { "label": "B: Tunjuk Andini", "next": "n29" }
+      ]
+    },
+    {
+      "id": "n29",
+      "text": "Jalan pulang bareng. KRL datang tepat waktu, keajaiban.",
+      "choices": [
+        { "label": "A: Duduk berdampingan", "ending": "e1" },
+        { "label": "B: Berdiri heroik", "ending": "e14" }
+      ]
+    },
+    {
+      "id": "n30",
+      "text": "Pamitan profesional terasa aman dan hangat.",
+      "choices": [
+        { "label": "A: Chat malamnya", "ending": "e2" },
+        { "label": "B: Tidur cepat", "ending": "e6" }
+      ]
+    }
+  ],
+  "endings": [
+    {
+      "id": "e1",
+      "title": "Pulang Bersama",
+      "badge": "Tap-In Tepat",
+      "text": "Kalian pulang bareng, obrolan mengalir, dunia terasa masuk akal.",
+      "hint": "Kejujuran dan timing sering bertemu di kereta yang sama."
+    },
+    {
+      "id": "e2",
+      "title": "Chat Lanjutan",
+      "badge": "After Office",
+      "text": "Malamnya, chat sederhana berubah jadi rencana.",
+      "hint": "Tak semua harus selesai di kantor."
+    },
+    {
+      "id": "e3",
+      "title": "Balon Pecah Manis",
+      "badge": "Berani Tarik",
+      "text": "Kejujuranmu dibalas senyum yang jelas.",
+      "hint": "Kadang risiko itu perlu."
+    },
+    {
+      "id": "e4",
+      "title": "Ngebut Tanpa Rem",
+      "badge": "Overcommit",
+      "text": "Kamu terlalu cepat, perasaan terpelanting.",
+      "hint": "Pegangan itu ada urutannya."
+    },
+    {
+      "id": "e5",
+      "title": "Surat Bahagia",
+      "badge": "HR Blessing",
+      "text": "Printer merestui, semesta mengangguk.",
+      "hint": "Ikuti ritual sampai tuntas."
+    },
+    {
+      "id": "e6",
+      "title": "Aman Sendiri",
+      "badge": "Zona Nyaman",
+      "text": "Tidak ada drama, hanya kamu dan rutinitas.",
+      "hint": "Pilihan aman selalu ada."
+    },
+    {
+      "id": "e7",
+      "title": "Loncat Perasaan",
+      "badge": "Emergency Exit",
+      "text": "Kamu mendarat dengan pelajaran.",
+      "hint": "Tahu kapan berhenti."
+    },
+    {
+      "id": "e8",
+      "title": "Maskot Merpati",
+      "badge": "Co-Creator",
+      "text": "Kantor punya maskot baru, kisahmu melegenda.",
+      "hint": "Bercanda bisa jadi identitas."
+    },
+    {
+      "id": "e9",
+      "title": "Kamus Emoji",
+      "badge": "Linguist",
+      "text": "Bahasa baru lahir, cinta ikut belajar.",
+      "hint": "Kreativitas berbuah aneh."
+    },
+    {
+      "id": "e10",
+      "title": "Merpati Tersinggung",
+      "badge": "Oops",
+      "text": "Candaanmu terlalu jauh, suasana buyar.",
+      "hint": "Sopan itu seni."
+    },
+    {
+      "id": "e11",
+      "title": "Surat Disobek",
+      "badge": "Anti-Takdir",
+      "text": "Kamu memilih bebas, dengan konsekuensi.",
+      "hint": "Tidak semua tanda harus diikuti."
+    },
+    {
+      "id": "e12",
+      "title": "Maaf Dramatis",
+      "badge": "Soap Opera",
+      "text": "Maafmu menghibur, tapi hasilnya nihil.",
+      "hint": "Kurangi drama."
+    },
+    {
+      "id": "e13",
+      "title": "Pidato Warteg",
+      "badge": "Standing Ovation",
+      "text": "Pidatomu dikenang, cintanya… tergantung.",
+      "hint": "Sorotan bukan segalanya."
+    },
+    {
+      "id": "e14",
+      "title": "Berdiri Heroik",
+      "badge": "Silent Ride",
+      "text": "Kamu berdiri gagah, momen kecil terasa besar.",
+      "hint": "Gestur kecil bisa berarti."
+    }
+  ]
+}

@@ -1,0 +1,370 @@
+{
+  "meta": {
+    "id": "jakarta-cari-kerja-extended",
+    "title": "Mencari Kerja di Jakarta",
+    "subtitle": "CV, KRL, dan Keputusan Hidup",
+    "description": "Petualangan panjang mencari kerja di Jakarta: interview berlapis, pilihan hidup, dan jalan tak terduga.",
+    "emoji": "🏙️"
+  },
+  "nodes": [
+    {
+      "id": "n1",
+      "text": "Pagi di kosan sempit Jakarta Timur. Panas, kipas bunyi aneh, HP kamu penuh notifikasi.",
+      "choices": [
+        {
+          "label": "A: Cek email",
+          "next": "n2"
+        },
+        {
+          "label": "B: Scroll LinkedIn",
+          "next": "n3"
+        }
+      ]
+    },
+    {
+      "id": "n2",
+      "text": "Belum ada balasan. Tapi ada undangan job fair weekend ini.",
+      "choices": [
+        {
+          "label": "A: Tandai kalender",
+          "next": "n4"
+        },
+        {
+          "label": "B: Abaikan, fokus online",
+          "next": "n3"
+        }
+      ]
+    },
+    {
+      "id": "n3",
+      "text": "LinkedIn penuh cerita sukses orang lain.",
+      "choices": [
+        {
+          "label": "A: Apply 5 lowongan",
+          "next": "n5"
+        },
+        {
+          "label": "B: Tutup LinkedIn, tarik napas",
+          "next": "n6"
+        }
+      ]
+    },
+    {
+      "id": "n4",
+      "text": "Job fair di JCC. Ramai, penuh harapan.",
+      "choices": [
+        {
+          "label": "A: Datang pagi",
+          "next": "n7"
+        },
+        {
+          "label": "B: Datang siang",
+          "next": "n8"
+        }
+      ]
+    },
+    {
+      "id": "n5",
+      "text": "Kamu apply banyak lowongan. Capek tapi lega.",
+      "choices": [
+        {
+          "label": "A: Update CV",
+          "next": "n6"
+        },
+        {
+          "label": "B: Rehat dulu",
+          "next": "n9"
+        }
+      ]
+    },
+    {
+      "id": "n6",
+      "text": "Kamu memperbaiki CV dan portofolio.",
+      "choices": [
+        {
+          "label": "A: Minta review teman",
+          "next": "n10"
+        },
+        {
+          "label": "B: Kirim langsung",
+          "next": "n11"
+        }
+      ]
+    },
+    {
+      "id": "n7",
+      "text": "Datang pagi, antrian panjang tapi teratur.",
+      "choices": [
+        {
+          "label": "A: Fokus perusahaan besar",
+          "next": "n12"
+        },
+        {
+          "label": "B: Coba startup kecil",
+          "next": "n13"
+        }
+      ]
+    },
+    {
+      "id": "n8",
+      "text": "Datang siang, sebagian booth mulai tutup.",
+      "choices": [
+        {
+          "label": "A: Tetap keliling",
+          "next": "n13"
+        },
+        {
+          "label": "B: Pulang lebih cepat",
+          "next": "n9"
+        }
+      ]
+    },
+    {
+      "id": "n9",
+      "text": "Di kosan malam hari. Kamu mulai ragu.",
+      "choices": [
+        {
+          "label": "A: Curhat ke keluarga",
+          "next": "n14"
+        },
+        {
+          "label": "B: Diam sendiri",
+          "next": "n15"
+        }
+      ]
+    },
+    {
+      "id": "n10",
+      "text": "Teman memberi kritik pedas tapi jujur.",
+      "choices": [
+        {
+          "label": "A: Perbaiki serius",
+          "next": "n11"
+        },
+        {
+          "label": "B: Sedikit defensif",
+          "next": "n15"
+        }
+      ]
+    },
+    {
+      "id": "n11",
+      "text": "Beberapa hari kemudian, email interview masuk.",
+      "choices": [
+        {
+          "label": "A: Interview online",
+          "next": "n16"
+        },
+        {
+          "label": "B: Interview offline",
+          "next": "n17"
+        }
+      ]
+    },
+    {
+      "id": "n12",
+      "text": "HR perusahaan besar terlihat formal.",
+      "choices": [
+        {
+          "label": "A: Jawab profesional",
+          "next": "n16"
+        },
+        {
+          "label": "B: Terlalu kaku",
+          "next": "n18"
+        }
+      ]
+    },
+    {
+      "id": "n13",
+      "text": "Startup kecil terlihat santai.",
+      "choices": [
+        {
+          "label": "A: Tunjukkan passion",
+          "next": "n19"
+        },
+        {
+          "label": "B: Tanya soal gaji dulu",
+          "next": "n18"
+        }
+      ]
+    },
+    {
+      "id": "n14",
+      "text": "Keluarga menyarankan pulang kampung jika lelah.",
+      "choices": [
+        {
+          "label": "A: Pertimbangkan serius",
+          "next": "n20"
+        },
+        {
+          "label": "B: Bertahan di Jakarta",
+          "next": "n15"
+        }
+      ]
+    },
+    {
+      "id": "n15",
+      "text": "Kamu merasa sendirian, tapi masih punya harapan.",
+      "choices": [
+        {
+          "label": "A: Cari freelance",
+          "next": "n21"
+        },
+        {
+          "label": "B: Terus cari full-time",
+          "next": "n11"
+        }
+      ]
+    },
+    {
+      "id": "n16",
+      "text": "Interview berjalan cukup lancar.",
+      "choices": [
+        {
+          "label": "A: Lanjut ke tahap teknis",
+          "next": "n22"
+        },
+        {
+          "label": "B: Menunggu kabar",
+          "ending": "e2"
+        }
+      ]
+    },
+    {
+      "id": "n17",
+      "text": "Perjalanan interview melelahkan.",
+      "choices": [
+        {
+          "label": "A: Tetap fokus",
+          "next": "n22"
+        },
+        {
+          "label": "B: Terlihat lelah",
+          "ending": "e5"
+        }
+      ]
+    },
+    {
+      "id": "n18",
+      "text": "Respons HR agak dingin.",
+      "choices": [
+        {
+          "label": "A: Klarifikasi",
+          "ending": "e4"
+        },
+        {
+          "label": "B: Biarkan saja",
+          "ending": "e5"
+        }
+      ]
+    },
+    {
+      "id": "n19",
+      "text": "Founder tertarik dengan ceritamu.",
+      "choices": [
+        {
+          "label": "A: Join startup",
+          "ending": "e6"
+        },
+        {
+          "label": "B: Pikir ulang",
+          "next": "n15"
+        }
+      ]
+    },
+    {
+      "id": "n20",
+      "text": "Pulang kampung memberi ketenangan.",
+      "choices": [
+        {
+          "label": "A: Mulai hidup baru",
+          "ending": "e9"
+        },
+        {
+          "label": "B: Kembali ke Jakarta",
+          "next": "n1"
+        }
+      ]
+    },
+    {
+      "id": "n21",
+      "text": "Kamu mulai ambil kerja freelance kecil.",
+      "choices": [
+        {
+          "label": "A: Tekuni serius",
+          "ending": "e7"
+        },
+        {
+          "label": "B: Hanya sementara",
+          "next": "n11"
+        }
+      ]
+    },
+    {
+      "id": "n22",
+      "text": "Tes teknis cukup sulit.",
+      "choices": [
+        {
+          "label": "A: Kerjakan jujur",
+          "ending": "e1"
+        },
+        {
+          "label": "B: Terburu-buru",
+          "ending": "e5"
+        }
+      ]
+    }
+  ],
+  "endings": [
+    {
+      "id": "e1",
+      "title": "Offer Letter",
+      "badge": "Success",
+      "text": "Kamu diterima kerja setelah perjalanan panjang.",
+      "hint": "Konsistensi terbayar."
+    },
+    {
+      "id": "e2",
+      "title": "Tahap Berikutnya",
+      "badge": "Hope",
+      "text": "Belum diterima, tapi kamu masih dipertimbangkan.",
+      "hint": "Sabar itu strategi."
+    },
+    {
+      "id": "e4",
+      "title": "Realita Kantor",
+      "badge": "Reality",
+      "text": "Kamu sadar belum cocok dengan budaya mereka.",
+      "hint": "Bukan salah siapa-siapa."
+    },
+    {
+      "id": "e5",
+      "title": "Belum Rezeki",
+      "badge": "Try Again",
+      "text": "Gagal kali ini, tapi bukan akhir.",
+      "hint": "Jakarta keras, tapi adil."
+    },
+    {
+      "id": "e6",
+      "title": "Startup Gagal",
+      "badge": "Secret",
+      "text": "Startup tutup setahun kemudian, tapi kamu belajar banyak.",
+      "hint": "Pengalaman mahal."
+    },
+    {
+      "id": "e7",
+      "title": "Freelancer Bertahan",
+      "badge": "Secret",
+      "text": "Freelance pelan-pelan jadi sumber hidup.",
+      "hint": "Jalan alternatif."
+    },
+    {
+      "id": "e9",
+      "title": "Pulang Kampung",
+      "badge": "Secret",
+      "text": "Kamu pulang kampung dan menemukan makna baru.",
+      "hint": "Tidak semua mimpi di Jakarta."
+    }
+  ]
+}
