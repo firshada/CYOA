@@ -53,9 +53,9 @@ export const AuthProvider = ({ children }) => {
                         }
 
                         // Sync multi-storyline endings (check for keys starting with endings_)
-                        // Note: ideally we iterate known storylines, but scanning LS is safer
-                        // Since we can't easily scan LS keys here without logic, we'll sync 'pdkt-awal' and 'pdkt-lanjutan' explicitly
-                        const storyIds = ['pdkt-awal', 'pdkt-lanjutan'];
+                        // Dynamically get all available story IDs
+                        const { getAllStorylines } = await import('../../data/storylines');
+                        const storyIds = getAllStorylines().map(s => s.id);
 
                         for (const sid of storyIds) {
                             const key = `endings_${sid}`;
