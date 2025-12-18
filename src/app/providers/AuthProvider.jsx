@@ -119,10 +119,13 @@ export const AuthProvider = ({ children }) => {
             }
         });
 
+        // Manually update state to ensure UI reflects logout immediately
+        setUser(null);
+        setSession(null);
         setLoading(false);
 
         if (error) {
-            throw error;
+            console.error("Logout error:", error);
         }
     };
 
