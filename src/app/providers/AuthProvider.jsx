@@ -111,6 +111,14 @@ export const AuthProvider = ({ children }) => {
     const signOut = async () => {
         setLoading(true);
         const { error } = await supabase.auth.signOut();
+
+        // Clear all endings from localStorage to prevent guest user from seeing them
+        Object.keys(localStorage).forEach(key => {
+            if (key.startsWith('endings_')) {
+                localStorage.removeItem(key);
+            }
+        });
+
         setLoading(false);
 
         if (error) {

@@ -46,6 +46,11 @@ export const EndingsProvider = ({ children }) => {
 
     const refreshEndings = useCallback(async (storylineId = currentStorylineId) => {
         setLoading(true);
+        // Safety timeout to prevent infinite loading
+        const timeoutId = setTimeout(() => {
+            setLoading(false);
+        }, 5000);
+
         try {
             // ALWAYS fetch from localStorage first (Local-First strategy)
             const storageKey = getStorageKey(storylineId);
@@ -73,8 +78,10 @@ export const EndingsProvider = ({ children }) => {
             setUnlockedEndingIds(finalEndings);
         } catch (error) {
             console.error('Error refreshing endings:', error);
+        } finally {
+            clearTimeout(timeoutId);
+            setLoading(false);
         }
-        setLoading(false);
     }, [user, currentStorylineId]);
 
     // Refresh when user or storyline changes
